@@ -1,20 +1,127 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<!-- <div class="d-flex flex-column">
+    <h1>H1 Page header</h1>
+    <h2>H2 Page sub header</h2>
+    <h3>H3 Page sub sub header</h3>
+    <h4>H4 age sub sub sub header</h4>
+    <h5>H5 Page sub sub sub sub header</h5>
+    <h5>H6 Page sub sub sub sub sub header</h5>
+    <p>This is awesome</p>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="d-flex flex-column">
+    <alert type="success">
+        <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+    </alert>
+    <alert type="info">
+        <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+    </alert>
+    <alert type="warning">
+        <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+    </alert>
+    <alert type="danger">
+        <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+    </alert>
+</div>
+<div class="d-flex flex-row">
+    <button type="button" class="btn btn-primary" btnCheckbox btnCheckboxTrue="1" btnCheckboxFalse="0">
+    Single Toggle
+  </button>
+</div> -->
+<div class="site-container d-flex flex-row row">
+    <div class="window-toolbar col-12 d-flex flex-row justify-content-start">
+        <div class="window-actions col-1 d-flex flex-row justify-content-around">
+            <div class="window-actions-button window-close d-flex flex-row justify-content-around align-items-center">
+                <i-x></i-x>
+            </div>
+            <div class="window-actions-button minimize d-flex flex-row justify-content-around align-items-center">
+                <i-minus></i-minus>
+            </div>
+            <div class="window-actions-button maximize d-flex flex-row justify-content-around align-items-center">
+                <i-maximize-2></i-maximize-2>
+            </div>
+        </div>
 
+    </div>
+    <div class="sidebar col-3">
+        <div class="favorites sidebar-section col-8 offset-2 d-flex flex-column justify-content-start">
+            <div class="sidebar-section-title">
+                Favorites
+            </div>
+            <ul class="sidebar-section-items">
+                <li><a>AirDrop</a></li>
+                <li><a>iCloud Drive</a></li>
+                <li><a>Applications</a></li>
+                <li class="active"><a>Israel</a></li>
+                <li><a>Pictures</a></li>
+            </ul>
+        </div>
+        <div class="devices sidebar-section  col-8 offset-2 d-flex flex-column justify-content-start">
+            <div class="sidebar-section-title">
+                Devices
+            </div>
+            <ul class="sidebar-section-items">
+                <li><a>Macbook Pro</a></li>
+                <li><a>Hard Drive</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-9 page-container d-flex flex-column">
+        <div class="page-header content-row d-flex flex-row justify-content-between">
+            <div class="page-title col-9 d-flex flex-column justify-content-between">
+                <div class="page-class">Users</div>
+                <div class="page-subject">Israel</div>
+            </div>
+            <div class="page-actions col-3 d-flex flex-row justify-content-between align-items-end">
+                <i-share></i-share>
+                <i-tag></i-tag>
+                <i-search></i-search>
+            </div>
+        </div>
+        <div class="content-row d-flex flex-row justify-content-start">
+            <div class="col-4">
+                <div class="card primary">
+                    <div class="card-body">
+                        <h5 class="card-title">Applications</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card info">
+                    <div class="card-body">
+                        <h5 class="card-title">Design</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card warning">
+                    <div class="card-body">
+                        <h5 class="card-title">Downloads</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-row d-flex flex-row justify-content-start">
+            <div class="col-4">
+                <div class="card square bg-dark text-white">
+                    <img class="card-img" src="/assets/img2.jpeg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Photo 2017</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 d-flex flex-column justify-content-between">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Documents</h5>
+                    </div>
+                </div>
+                <div class="card pill bg-dark text-white">
+                    <img class="card-img" src="/assets/img1.jpeg" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Music</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
