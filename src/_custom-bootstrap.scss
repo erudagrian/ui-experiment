@@ -44,12 +44,16 @@ h6,
     z-index: 999;
     .window-actions {
         &-button {
-            width: 1em;
-            height: 1em;
             border-radius: 50%;
+            height: 1em;
+            position: relative;
+            width: 1em;
             svg {
-                width: .7em;
+                left: 0.17rem;
                 height: .7em;
+                position: absolute;
+                top: 0.17rem;
+                width: .7em;
             }
             &.window-close {
                 background: $button-close-color;
@@ -162,12 +166,12 @@ h6,
 .card {
     border: none;
     border-radius: $radius;
-    box-shadow: 0px 30px 130px -20px rgba(138, 138, 138, 0.5);
+    box-shadow: 0px 30px 130px -20px rgba(138, 138, 138, 0.3);
     overflow: hidden;
     min-height: 6.5rem;
-    transition: box-shadow ease-in .7s;
+    transition: box-shadow ease-in .1s;
     &:hover {
-        box-shadow: 0px 0px 130px 20px rgba(138, 138, 138, 0.5);
+        box-shadow: 0px 0px 130px 20px rgba(138, 138, 138, 0.3);
     }
     &.primary {
         &:before {
